@@ -1,11 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="description"
+        content="Arena Sports: notícias, placares, campeonatos e agenda esportiva."
+    >
+
+    <title>Arena Sports</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header class="cabecalho">
+        <a href="#inicio" class="logo">
+            <span class="logo-icone">A</span>
+            <span>ARENA</span>
+        </a>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio" class="menu-link ativo">Início</a>
+            <a href="#placares" class="menu-link">Placares</a>
+            <a href="#noticias" class="menu-link">Notícias</a>
+            <a href="#agenda" class="menu-link">Agenda</a>
+        </nav>
+
+        <div class="acoes-cabecalho">
+            <button
+                class="botao-pesquisa"
+                id="botaoPesquisa"
+                type="button"
+                aria-label="Abrir pesquisa"
+            >
+                <span></span>
+            </button>
+
+            <button
+                class="botao-menu"
+                id="botaoMenu"
+                type="button"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <form class="caixa-pesquisa" id="caixaPesquisa">
+            <input
+                id="campoPesquisa"
+                type="search"
+                placeholder="Pesquisar notícias..."
+                autocomplete="off"
+            >
+
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="banner" id="inicio">
+            <div class="banner-fundo"></div>
+            <div class="banner-sombra"></div>
+
+            <div class="banner-conteudo">
+                <p class="subtitulo">
+                    <span></span>
+                    Informação em movimento
+                </p>
+
+                <h1>
+                    Viva cada
+                    <strong>jogada.</strong>
+                </h1>
+
+                <p class="banner-texto">
+                    Notícias, resultados e os principais acontecimentos do
+                    mundo dos esportes em um só lugar.
+                </p>
+
+                <a href="#noticias" class="botao-principal">
+                    Ver destaques
+                    <span>↗</span>
+                </a>
+            </div>
+
+            <div class="estatisticas">
+                <div>
+                    <strong>12</strong>
+                    <span>Campeonatos</span>
+                </div>
+
+                <div>
+                    <strong>48</strong>
+                    <span>Jogos na semana</span>
+                </div>
+
+                <div>
+                    <strong>08</strong>
+                    <span>Ao vivo hoje</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-placares" id="placares">
+            <div class="titulo-placares">
+                <span class="indicador-ao-vivo"></span>
+
+                <div>
+                    <small>Agora</small>
+                    <h2>Jogos ao vivo</h2>
+                </div>
+            </div>
+
+            <div class="lista-placares">
+                <article class="placar destaque">
+                    <div class="placar-informacao">
+                        <span>Futebol • 2º tempo</span>
+                        <strong>72'</strong>
+                    </div>
+
+                    <div class="times">
+                        <div class="time">
+                            <span class="escudo verde">PAL</span>
+                            <strong>Palmeiras</strong>
+                        </div>
+
+                        <div class="resultado">
+                            <strong>2</strong>
+                            <span>—</span>
+                            <strong>1</strong>
+                        </div>
+
+                        <div class="time direita">
+                            <span class="escudo vermelho">INT</span>
+                            <strong>Inter</strong>
+                        </div>
+                    </div>
+
+                    <div class="progresso">
+                        <span style="width: 72%"></span>
+                    </div>
+                </article>
+
+                <article class="placar">
+                    <div class="placar-informacao">
+                        <span>Basquete • 4º período</span>
+                        <strong>04:21</strong>
+                    </div>
+
+                    <div class="times">
+                        <div class="time">
+                            <span class="escudo roxo">FRA</span>
+                            <strong>Franca</strong>
+                        </div>
+
+                        <div class="resultado">
+                            <strong>81</strong>
+                            <span>—</span>
+                            <strong>78</strong>
+                        </div>
+
+                        <div class="time direita">
+                            <span class="escudo azul">MIN</span>
+                            <strong>Minas</strong>
+                        </div>
+                    </div>
+
+                    <div class="progresso">
+                        <span style="width: 89%"></span>
+                    </div>
+                </article>
+
+                <article class="placar">
+                    <div class="placar-informacao">
+                        <span>Vôlei • 3º set</span>
+                        <strong>Ao vivo</strong>
+                    </div>
+
+                    <div class="times">
+                        <div class="time">
+                            <span class="escudo laranja">SCR</span>
+                            <strong>Sada</strong>
+                        </div>
+
+                        <div class="resultado">
+                            <strong>2</strong>
+                            <span>—</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="time direita">
+                            <span class="escudo ciano">SUZ</span>
+                            <strong>Suzano</strong>
+                        </div>
+                    </div>
+
+                    <div class="progresso">
+                        <span style="width: 64%"></span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-noticias" id="noticias">
+            <div class="cabecalho-secao">
+                <div>
+                    <p class="subtitulo escuro">
+                        <span></span>
+                        Últimas notícias
+                    </p>
+
+                    <h2>No centro<br>da ação.</h2>
+                </div>
+
+                <div class="filtros">
+                    <button class="filtro ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro" data-filtro="futebol">Futebol</button>
+                    <button class="filtro" data-filtro="basquete">Basquete</button>
+                    <button class="filtro" data-filtro="atletismo">Atletismo</button>
+                </div>
+            </div>
+
+            <div class="grade-noticias">
+                <article class="noticia noticia-principal" data-categoria="futebol">
+                    <div class="noticia-imagem imagem-futebol">
+                        <span class="numero-noticia">01</span>
+                        <span class="categoria">Futebol</span>
+                    </div>
+
+                    <div class="noticia-conteudo">
+                        <div class="noticia-meta">
+                            <span>Campeonato nacional</span>
+                            <span>Hoje, 11:40</span>
+                        </div>
+
+                        <h3>
+                            Pressão alta e transições rápidas mudam o ritmo da rodada
+                        </h3>
+
+                        <p>
+                            Os times que controlam o espaço sem a bola conseguem
+                            criar vantagem nos minutos mais decisivos.
+                        </p>
+
+                        <button class="abrir-noticia" data-noticia="futebol">
+                            Ler análise →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="noticia" data-categoria="basquete">
+                    <div class="noticia-imagem imagem-basquete">
+                        <span class="numero-noticia">02</span>
+                        <span class="categoria">Basquete</span>
+                    </div>
+
+                    <div class="noticia-conteudo">
+                        <div class="noticia-meta">
+                            <span>NBB</span>
+                            <span>Hoje, 10:15</span>
+                        </div>
+
+                        <h3>
+                            Defesas ajustadas elevam a intensidade nos playoffs
+                        </h3>
+
+                        <button class="abrir-noticia" data-noticia="basquete">
+                            Ver detalhes →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="noticia" data-categoria="atletismo">
+                    <div class="noticia-imagem imagem-atletismo">
+                        <span class="numero-noticia">03</span>
+                        <span class="categoria">Atletismo</span>
+                    </div>
+
+                    <div class="noticia-conteudo">
+                        <div class="noticia-meta">
+                            <span>Velocidade</span>
+                            <span>Ontem, 19:20</span>
+                        </div>
+
+                        <h3>
+                            Nova geração reduz marcas e mira o pódio internacional
+                        </h3>
+
+                        <button class="abrir-noticia" data-noticia="atletismo">
+                            Conhecer atletas →
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-agenda" id="agenda">
+            <div class="titulo-agenda">
+                <p class="subtitulo">
+                    <span></span>
+                    Próximos eventos
+                </p>
+
+                <h2>Marque<br>na agenda.</h2>
+            </div>
+
+            <div class="lista-agenda">
+                <article class="evento">
+                    <time>
+                        <strong>18</strong>
+                        <span>SET<br>19:30</span>
+                    </time>
+
+                    <div class="evento-conteudo">
+                        <small>Futebol</small>
+                        <h3>Flamengo × Grêmio</h3>
+                        <p>Campeonato nacional • Maracanã</p>
+                    </div>
+
+                    <button class="botao-lembrete">
+                        <span>+</span>
+                        Lembrar
+                    </button>
+                </article>
+
+                <article class="evento">
+                    <time>
+                        <strong>19</strong>
+                        <span>SET<br>20:00</span>
+                    </time>
+
+                    <div class="evento-conteudo">
+                        <small>Basquete</small>
+                        <h3>São Paulo × Bauru</h3>
+                        <p>Liga nacional • São Paulo</p>
+                    </div>
+
+                    <button class="botao-lembrete">
+                        <span>+</span>
+                        Lembrar
+                    </button>
+                </article>
+
+                <article class="evento">
+                    <time>
+                        <strong>21</strong>
+                        <span>SET<br>10:00</span>
+                    </time>
+
+                    <div class="evento-conteudo">
+                        <small>Atletismo</small>
+                        <h3>Meeting Brasil de Atletismo</h3>
+                        <p>Etapa nacional • São Paulo</p>
+                    </div>
+
+                    <button class="botao-lembrete">
+                        <span>+</span>
+                        Lembrar
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a href="#inicio" class="logo">
+            <span class="logo-icone">A</span>
+            <span>ARENA</span>
+        </a>
+
+        <p>Informação no ritmo do esporte.</p>
+
+        <p>© <span id="anoAtual"></span> Arena Sports</p>
+    </footer>
+
+    <dialog class="modal" id="modalNoticia">
+        <button class="fechar-modal" id="fecharModal">×</button>
+
+        <p class="subtitulo escuro">
+            <span></span>
+            Especial Arena
+        </p>
+
+        <h2 id="modalTitulo"></h2>
+        <p id="modalTexto"></p>
+
+        <div class="modal-estatistica">
+            <strong id="modalNumero"></strong>
+            <span id="modalLegenda"></span>
+        </div>
+    </dialog>
+
+    <div class="mensagem" id="mensagem"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
